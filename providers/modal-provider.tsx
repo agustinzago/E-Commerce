@@ -21,3 +21,5 @@ export const ModalProvider = () => {
         </>
     )
 }
+
+//This component prevents a hydration error
