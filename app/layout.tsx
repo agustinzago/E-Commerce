@@ -2,20 +2,19 @@ import { ClerkProvider } from '@clerk/nextjs'
 import { Inter } from 'next/font/google'
 import type { Metadata } from 'next'
 
-
 import './globals.css'
-import { ModalProvider } from '@/providers/modal-provider'
-import { ToasterProvider } from '@/providers/toast-provider'
+import { ModalProvider } from '@/providers/ModalProvider'
+import { ToasterProvider } from '@/providers/ToasterProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Admin Dashboard',
-  description: 'Admin Dashboard',
+  description: 'Admin Dashboard'
 }
 
-export default function RootLayout({
-  children,
+export default function RootLayout ({
+  children
 }: {
   children: React.ReactNode
 }) {
