@@ -34,6 +34,7 @@ module.exports = {
     '@typescript-eslint/restrict-template-expressions': 'off',
     'react/prop-types': 'off',
     '@typescript-eslint/strict-boolean-expressions': 'off',
-    '@typescript-eslint/no-unused-vars': 'off'
+    '@typescript-eslint/no-unused-vars': 'off',
+    '@typescript-eslint/no-misused-promises': 'off'
   }
 }
