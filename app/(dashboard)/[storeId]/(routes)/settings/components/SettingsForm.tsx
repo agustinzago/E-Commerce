@@ -24,6 +24,7 @@ import { Input } from '@/components/ui/input'
 import axios from 'axios'
 import { AlertModal } from '@/components/modals/AlertModal'
 import { ApiAlert } from '@/components/ui/apiAlert'
+import { useOrigin } from '@/hooks/useOrigin'
 
 interface SettingsFormProps {
   initialData: Store
@@ -40,6 +41,7 @@ const SettingsForm: React.FC<SettingsFormProps> = (
 ) => {
   const params = useParams()
   const router = useRouter()
+  const origin = useOrigin()
   const [open, setOpen] = useState(false)
   const [loading, setLoading] = useState(false)
 
